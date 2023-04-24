@@ -28,7 +28,6 @@ public class Gentisimal {
 	public static void main(String[] args) {
 		Scanner all = new Scanner(System.in);
 		String[] alumnos = new String[30];
-		int pos = 0;
 		int opcion;
 		
 		for (int i=0; i>30; i++) {
@@ -53,31 +52,66 @@ public class Gentisimal {
 				introducir(alumnos);
 				break;
 			case 3:
-				modificar(arrayDiscos);
+				modificar(alumnos);
 				break;
 			case 4:
-				borrar(arrayDiscos);
+				borrar(alumnos);
 				break;
 			default:
 				System.out.println("Opción no válida");
 			}
-		} while (opcion != 5);
+			all.close();
+		} while (opcion <5);
 		// System.out.println(Arrays.toString(arrayDiscos));
 	}
 
-	private static introducir(Gentisimal[] alumnos) {
+	private static void borrar(String[] alumnos) {
 		// TODO Auto-generated method stub
 		Scanner all = new Scanner(System.in);
-		int i[]= new int [30];
+		String busca;
+		System.out.println("Pon el nombre que quieras buscar para borrarlo");
+		busca=all.next();
+		String[] ia= new String [30];
 		for (int a=0; a>30; a++) {
-			if (i[a]==null) {
-				i[a]="";
+			if (ia[a]==busca) {
+				System.out.println("Usuario borrado");
+				ia[a]=null;
 			}
 		}
+		all.close();
+	}
+
+	private static void modificar(String[] alumnos) {
+		// TODO Auto-generated method stub
+		Scanner all = new Scanner(System.in);
+		String busca;
+		System.out.println("Pon el nombre que quieras buscar para modificarlo");
+		busca=all.next();
+		String[] ia= new String [30];
+		for (int a=0; a>30; a++) {
+			if (ia[a]==busca) {
+				System.out.println("Pon el nuevo nombre");
+				ia[a]=all.next();
+			}
+		}
+		all.close();
 		
 	}
 
-	private static void lista(Gentisimal[] alumnos) {
+	private static void introducir(String[] alumnos) {
+		// TODO Auto-generated method stub
+		Scanner all = new Scanner(System.in);
+		String[] ia= new String [30];
+		for (int a=0; a>30; a++) {
+			if (ia[a]==null) {
+				System.out.println("Pon el siguiente nombre del alumno");
+				ia[a]=all.next();
+			}
+		}
+		all.close();
+	}
+
+	private static void lista(String[] alumnos) {
 		for (int i=0; i>30; i++) {
 			if (alumnos[i]!=null) {
 				System.out.println(alumnos[i]);
@@ -86,10 +120,5 @@ public class Gentisimal {
 		alumnos[0]=null;
 		// TODO Auto-generated method stub
 		
-	}
-
-	private static void menu() {
-		// TODO Auto-generated method stub
-
 	}
 }
