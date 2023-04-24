@@ -1,7 +1,5 @@
  package ejercicio3;
 
-import java.util.Scanner;
-
 public class Punto {
 	/**
 	 * Atributo x
@@ -22,7 +20,9 @@ public class Punto {
 	 * Imprime x+y
 	 */
 	public void imprime() {
-		System.out.println(x +" , " + y);
+		String result = "";
+		result +="x; " + x + " y; " + y;
+		System.out.println(result);
 	}
 	
 	/**
@@ -32,17 +32,13 @@ public class Punto {
 	 */
 	
 	public void setXY(int x, int y) {
-		Scanner all = new Scanner(System.in);
-		x=all.nextInt();
-		y=all.nextInt();
-		all.close();
+		x=2;
+		y=5;
 	}
 	
 	public void desplaza(int dx, int dy) {
-		Scanner all = new Scanner(System.in);
-		dx+=all.nextInt();
-		dy+=all.nextInt();
-		all.close();
+		dx+=6;
+		dy+=9;
 	}
 	public int distancia(int puntoP) {
 		this.x+=this.y;
