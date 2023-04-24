@@ -16,15 +16,8 @@ public class Libro {
 	int ejemplares;
 	int ejemplaresPres;
 
-	public Libro() {
-		this.título = título;
-		this.autor = autor;
-		this.ejemplares = ejemplares;
-		this.ejemplaresPres = ejemplaresPres;
-	}
-
 	public Libro(String título, String autor, int ejemplares, int ejemplaresPres) {
-		título = "Como hacer pushero";
+		this.título = "Como hacer pushero";
 		this.autor = "Tragabuche";
 		this.ejemplares = 50;
 		this.ejemplaresPres = 20;
@@ -48,12 +41,10 @@ public class Libro {
 	}
 	public String toString() {
 		String result = "";
-		result += "autor: " + autor +"/n";
-		result +="título: " + título+"/n";
-		result += "ejemplares: " + ejemplares +"/n";
-		result += "ejemplares prestados: " +ejemplaresPres+"/n";
+		result += "autor: " + autor +"\n";
+		result +="título: " + título+"\n";
+		result += "ejemplares: " + ejemplares +"\n";
+		result += "ejemplares prestados: " +ejemplaresPres+"\n";
 		return result;
 	}
 }
-
-
