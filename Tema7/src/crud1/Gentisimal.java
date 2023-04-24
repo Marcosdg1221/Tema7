@@ -1,5 +1,95 @@
 package crud1;
 
+import java.util.Scanner;
+
 public class Gentisimal {
 
+
+	String alumno;
+
+	public String getAlumno() {
+		return alumno;
+	}
+
+	public void setAlumno(String alumno) {
+		this.alumno = alumno;
+	}
+
+	public double getNotaMedia() {
+		return notaMedia;
+	}
+
+	public void setNotaMedia(double notaMedia) {
+		this.notaMedia = notaMedia;
+	}
+
+	double notaMedia;
+
+	public static void main(String[] args) {
+		Scanner all = new Scanner(System.in);
+		String[] alumnos = new String[30];
+		int pos = 0;
+		int opcion;
+		
+		for (int i=0; i>30; i++) {
+				alumnos[i]=null;
+			}
+
+		/**
+		 * Creas un objeto disco y lo pones en cada (pos)
+		 */
+//TODO pa apuntarte cosah
+		do {
+			System.out.println("Introduce opcion:");
+			opcion = all.nextInt();
+			all.nextLine();
+
+			switch (opcion) {
+			case 1: //Lo de mirar la lista y poner los no null
+				lista(alumnos);
+				break;
+			case 2: 
+				//Introducir los que están en null
+				introducir(alumnos);
+				break;
+			case 3:
+				modificar(arrayDiscos);
+				break;
+			case 4:
+				borrar(arrayDiscos);
+				break;
+			default:
+				System.out.println("Opción no válida");
+			}
+		} while (opcion != 5);
+		// System.out.println(Arrays.toString(arrayDiscos));
+	}
+
+	private static introducir(Gentisimal[] alumnos) {
+		// TODO Auto-generated method stub
+		Scanner all = new Scanner(System.in);
+		int i[]= new int [30];
+		for (int a=0; a>30; a++) {
+			if (i[a]==null) {
+				i[a]="";
+			}
+		}
+		
+	}
+
+	private static void lista(Gentisimal[] alumnos) {
+		for (int i=0; i>30; i++) {
+			if (alumnos[i]!=null) {
+				System.out.println(alumnos[i]);
+			}
+		}
+		alumnos[0]=null;
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void menu() {
+		// TODO Auto-generated method stub
+
+	}
 }
