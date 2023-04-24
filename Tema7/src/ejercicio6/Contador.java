@@ -1,7 +1,5 @@
 package ejercicio6;
 
-import java.util.*;
-
 public class Contador {
 
 	private int cont=1;
@@ -51,7 +49,7 @@ public class Contador {
 	 * Decrementa contador en uno
 	 */
 	public void decrementar() {
-		if (cont > 0) {
+		if (cont > 0) { //Sólo si es positivo se restará
 			cont--;
 		}
 	}
@@ -62,5 +60,11 @@ public class Contador {
 		public int resultado() {
 			int result = cont;
 			return result;	
+			
+			
 	}
+		@Override
+		public String toString() {
+			return "Contador [cont=" + cont + "]";
+		}
 }

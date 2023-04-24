@@ -1,17 +1,12 @@
 package ejercicio5;
 
-import java.util.*;
-
-import ejercicio4.Articulo;
-
 public class Main {
 	public static void main(String[] args) {
 		//Llamar a métodos, construir objetos para la hora e imprimirlo.
 		
-		Hora hora = new Hora(0, 0, 0);
-		Hora hora2 = new Hora();
-		Hora hora3 = new Hora(hora);
-		Hora.incrementaSegundo();
+		int segundo=0;
+		segundo=Hora.incrementaSegundo();
+		Hora hora = new Hora(segundo, 0, 0);
 		System.out.println(hora);
 	}
 }

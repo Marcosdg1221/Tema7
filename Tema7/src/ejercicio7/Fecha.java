@@ -128,7 +128,7 @@ public class Fecha {
 					dia = 1;
 					año++;
 				} else if (mes == 2) { // Entran en juego los bisiestos y febrero, me entran ganas de hacer una huelga
-										// para que febrero tenga 30 días. Pobrete.
+										// para que febrero tenga 30 días. Pobrete solo tiene 29 y a veces.
 					if (bisiesto) {
 						if (dia == 29) {
 							dia = 0;
