@@ -1,6 +1,6 @@
 package ejercicio3;
 
-import ejercicio1.CuentaCorriente;
+import ejercicio1no.solucionado.CuentaCorriente;
 
 public class Main {
 

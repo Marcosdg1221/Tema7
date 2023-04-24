@@ -1,11 +1,11 @@
 package ejercicio2;
 
-import ejercicio1.CuentaCorriente;
+import ejercicio1no.solucionado.CuentaCorriente;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Libro cuenta = new Libro("título", "String autor", 2, 1);
+		Libro libro = new Libro("título", "String autor", 2, 1);
 
 		System.out.println();
 	}

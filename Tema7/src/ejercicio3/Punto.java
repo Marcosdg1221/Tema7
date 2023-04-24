@@ -1,14 +1,14 @@
-package ejercicio3;
+ package ejercicio3;
 
 import java.util.Scanner;
 
 public class Punto {
 	/**
-	 * 
+	 * Atributo x
 	 */
 	int x;
 	/**
-	 * 
+	 * Atributo y
 	 */
 	int y;
 	/**
@@ -18,10 +18,18 @@ public class Punto {
 		this.x=x;
 		this.y=y;
 	}
-	
+	/**
+	 * Imprime x+y
+	 */
 	public void imprime() {
 		System.out.println(x +" , " + y);
 	}
+	
+	/**
+	 * Constructor para XY
+	 * @param x
+	 * @param y
+	 */
 	
 	public void setXY(int x, int y) {
 		Scanner all = new Scanner(System.in);

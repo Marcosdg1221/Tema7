@@ -25,14 +25,14 @@ public class Libro {
 
 	public Libro(String título, String autor, int ejemplares, int ejemplaresPres) {
 		título = "Como hacer pushero";
-		this.autor = "Tragabucha";
+		this.autor = "Tragabuche";
 		this.ejemplares = 50;
 		this.ejemplaresPres = 20;
 	}
 
 	public boolean prestamo(int ejemplaresPres) {
 		boolean prestamo = false;
-		if (ejemplaresPres > 0) {
+		if (ejemplaresPres > ejemplares) {
 			prestamo = true;
 		}
 		return prestamo;
@@ -46,4 +46,14 @@ public class Libro {
 		}
 		return prestar;
 	}
+	public String toString() {
+		String result = "";
+		result += "autor: " + autor +"/n";
+		result +="título: " + título+"/n";
+		result += "ejemplares: " + ejemplares +"/n";
+		result += "ejemplares prestados: " +ejemplaresPres+"/n";
+		return result;
+	}
 }
+
+
